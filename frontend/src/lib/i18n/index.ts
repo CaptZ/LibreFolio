@@ -19,9 +19,10 @@ register('en', () => import('./en.json'));
 register('it', () => import('./it.json'));
 register('fr', () => import('./fr.json'));
 register('es', () => import('./es.json'));
+register('de', () => import('./de.json'));
 
 // Supported locales
-export const SUPPORTED_LOCALES = ['en', 'it', 'fr', 'es'] as const;
+export const SUPPORTED_LOCALES = ['en', 'it', 'fr', 'es', 'de'] as const;
 export type SupportedLocale = (typeof SUPPORTED_LOCALES)[number];
 
 // Default locale
@@ -33,6 +34,7 @@ export const LOCALE_NAMES: Record<SupportedLocale, string> = {
     it: 'Italiano',
     fr: 'Français',
     es: 'Español',
+    de: 'Deutsch',
 };
 
 // Locale flags (emoji)
@@ -41,6 +43,7 @@ export const LOCALE_FLAGS: Record<SupportedLocale, string> = {
     it: '🇮🇹',
     fr: '🇫🇷',
     es: '🇪🇸',
+    de: 'DE',
 };
 
 /**
