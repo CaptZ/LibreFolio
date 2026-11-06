@@ -113,12 +113,12 @@ Run LibreFolio using the official pre-built image. No development tools or compi
 2. **Download the configuration files**:
    ```bash
    # Using curl:
-   curl -L https://raw.githubusercontent.com/Librefolio/LibreFolio/main/docker-compose.prod.yml -o docker-compose.yml
-   curl -L https://raw.githubusercontent.com/Librefolio/LibreFolio/main/.env.example -o .env
+   curl -L https://raw.githubusercontent.com/CaptZ/LibreFolio/main/docker-compose.prod.yml -O docker-compose.yml
+   curl -L https://raw.githubusercontent.com/CaptZ/LibreFolio/main/.env.example -O .env
 
    # Or using wget:
-   wget https://raw.githubusercontent.com/Librefolio/LibreFolio/main/docker-compose.prod.yml -O docker-compose.yml
-   wget https://raw.githubusercontent.com/Librefolio/LibreFolio/main/.env.example -o .env
+   wget https://raw.githubusercontent.com/CaptZ/LibreFolio/main/docker-compose.prod.yml -O docker-compose.yml
+   wget https://raw.githubusercontent.com/CaptZ/LibreFolio/main/.env.example -O .env
    ```
 
 3. **Start the application**:
